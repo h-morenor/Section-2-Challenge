@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homework challenge: Post session feedback</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body align="center">
+    <div> <p> <h1>Thank you for joining us for a session at Code Labs Academy!</h1></p> </div>
+<div>
+    <label for="date"> Session Date </label>
+    <input type="date" name="session date" id="date">
+
+    <label for="subject"> Subject: </label>
+    <select name="subject" id="subject">
+        <option value="other">Other</option>
+        <option value="subject 1">Subject 1</option>
+        <option value="subject 2">Subject 2</option>
+    </select>
+</div>
+<br>
+<div>
+    <label for="information">Please mention any topics you would like to ask further questions or gather more information on.</label><br>
+    <textarea name="information" id="information" cols="30" rows="5"></textarea><br><br>
+</div>
+
+<!-- Study at home section -->
+
+<div>Do you study at home? 
+
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="workhome" value="yes">
+    <label for="no">No</label>
+    <input type="radio" id="no" name="workhome" value="no">
+</div>
+
+  <!-- End -->
+
+<div>    
+    <p>Why are you seeking more information on these topics?</p>
+    
+    <input type="checkbox" id="topic 1" name="topics"> <label for="topic 1">I am interested in a more in depth discussion</label><br>
+    
+    <input type="checkbox" id="topic 2" name="topics"><label for="topic 2">I didn't understand it in the session</label><br>
+    
+    <input type="checkbox" id="topic 3" name="topics"><label for="topic 3">Phone apps</label><br>
+    
+
+</div>
+
+<br>
+    <label for="informative"> On a scale of 1 to 5*, please indicate how informative you felt the session was. </label>
+    <input type="number" name="informative" id="informative" min="1" max="5">
+<br>
+    <label for="engaging"> On a scale of 1 to 5*, please indicate how engaging you felt the session was. </label>
+    <input type="number" name="engaging" id="engaging" min="1" max="5">
+<br>
+    <label for="recommend"> On a scale of 1 to 5*, please indicate how likely you feel it is that you would recommend the course to a friend. </label>
+    <input type="number" name="recommend" id="recommend" min="1" max="5">
+<br>
+<br>
+<label for="feedback">Please use this space to give us any other feedback you may have.</label><br>
+<textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
+<br>
+<br>
+    <label for="email"> Email address:</label>
+    <input type="email" name="email" id="email">
+<br>
+<br>
+    <form action="">
+    <input type="submit" id="submit-input" value="Submit" />
+      </form>
+    </body>
+</html>
